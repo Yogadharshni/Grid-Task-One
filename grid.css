@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+}
+.heading{
+    background-color: black;
+    
+}
+
+.name{
+  color: rgb(246, 248, 243);
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  font-weight: 700;
+  
+  
+}
+.logo{
+
+    height: 70px;
+    margin-top: 6px;
+    position: fixed; 
+}
+.empty{
+    background-color: rgb(92, 87, 87);
+    height: 560px;
+    /* margin:0px; */
+    /* width:100%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 30px;
+    grid-template-areas: 
+    "big search search search"
+    "big one two three"
+    "big down down down" ;
+}
+
+.big{
+    grid-area: big;
+    background-color: black;
+    margin-top: 40px ;
+    margin-bottom: 40px ;
+    margin-left: 30px ;
+   
+    border-radius: 20px;
+}
+.search{
+    grid-area: search;
+    background-color: black;
+    margin-left: 90px;
+    margin-top: 80px;
+    border: 20px;
+    width: 70%;
+    height: 25%;
+    border-radius: 10px;
+  
+}
+h4{
+    color: rgb(226, 222, 222);
+    margin-top: 10px ;
+    margin-left: 20px;
+    letter-spacing: 0.1em;
+}
+.one{
+    grid-area: one;
+    background-color: black;
+    width: 70%;
+   height: 100%;
+   margin-left: 30px;
+   /* margin-bottom: 50px; */
+   border-radius: 10px;
+}
+.two{
+    grid-area: two;
+    background-color: black;
+    width: 70%;
+   height: 100%;
+   margin-left: 30px;
+
+   border-radius: 10px;
+}
+.three{
+    grid-area: three;
+    background-color: black;
+    width: 70%;
+   height: 100%;
+   margin-left: 30px;
+
+   border-radius: 10px;
+}
+.down{
+    grid-area: down;
+    background-color: black;
+   
+    margin-bottom: 40px ;
+    margin-left: 30px ;
+    margin-right: 60px ;
+    border-radius: 20px;
+}
